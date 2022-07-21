@@ -31,6 +31,21 @@ let recipes = [
 
 // Each recipe should be in its own div, that can be recCont. We are declaring it here since we will want to change its value with each itteration of the loop.
 
-let recCont
+let recCont = document.getElementsByClassName('recipes')[0];
 
 // HINT: Using .map will be very helpful when itterating through the ingredients array.
+
+
+
+function loopRecipes(){
+    recipes.forEach((recipe, index) => {
+        let recipeC = document.createElement('P');
+        let recipeCtext = document.createTextNode(recipe.title);
+
+        recipeC.appendChild(recipeCtext);
+        recCont.appendChild('recipeC');
+    })
+      
+}
+
+loopRecipes();

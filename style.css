@@ -4,6 +4,8 @@
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .recipes > div {
